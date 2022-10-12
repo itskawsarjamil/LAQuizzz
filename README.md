@@ -2,16 +2,16 @@
 
 The Live link of this project is: 
 
-*toasted
+* toasted
     in this project i use toast to verify and show the answer of quiz
 
-*Blog
+* Blog
     in blog section i have tried to write some answer about some important topic
 
-*Topics
+* Topics
     in Topic section i have add some topics which we can use to testify ourself.
 
-    
+
 
 ## Available Scripts
 
