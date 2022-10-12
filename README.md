@@ -1,6 +1,6 @@
 # LAQuizzz-Let's Assess Yourself By Quiz.
 
-The Live link of this project are [here](https://dancing-gumption-7e5675.netlify.app/) 
+The Live link of this project is [here](https://dancing-gumption-7e5675.netlify.app/) 
 
 * toasted
     in this project i use toast to verify and show the answer of quiz
