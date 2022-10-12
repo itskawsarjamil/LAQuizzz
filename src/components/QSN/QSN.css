@@ -14,6 +14,12 @@
     border-radius: 20px;
 }
 
-.toast-color{
-    background-color: aquamarine;
+.eyebtn{
+    margin: 2em;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5em;
+    position: absolute;
+    right: 0;
+    top: 0;
 }

@@ -1,32 +1,33 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
-import Toast from 'react-bootstrap/Toast';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './QSN.css';
+import {  faEye } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const QSN = ({ qsn, idx }) => {
     const ans = qsn.correctAnswer;
     const isclick = (value) => {
         if (ans === value) {
             console.log("right");
-            // <BasicExample ans={'right'}></BasicExample>
-            <Toast className='toast-color'>
-                <Toast.Body>Hello, world! This is a toast message.</Toast.Body>
-            </Toast>
+            toast('right');
 
         }
         else {
             console.log("wrong");
-            // <BasicExample ans={'wrong'}></BasicExample>
+            toast('wrong');
         }
     }
     const crctans = () => {
-        // <BasicExample ans={ans}></BasicExample>
-        // console.log(ans);
+        console.log('Answer:',ans);
+        toast(ans);
+
     }
     return (
         <div className='card'>
             {/* 1 */}
             <h4>Quiz {idx + 1}:{qsn.question}</h4>
-            <button onClick={crctans}>eye</button>
+            <button onClick={crctans} className='eyebtn'><FontAwesomeIcon icon={faEye}></FontAwesomeIcon> </button>
             <Form>
                 <div className='btndiv'>
                     <Form.Check
@@ -36,7 +37,9 @@ const QSN = ({ qsn, idx }) => {
                         type='radio'
                         id={`inline-radio-1`}
                         onClick={() => isclick(qsn.options[0])}
+
                     />
+                    <ToastContainer />
                     <Form.Check
                         inline
                         label={qsn.options[1]}
@@ -45,6 +48,7 @@ const QSN = ({ qsn, idx }) => {
                         id={`inline-radio-2`}
                         onClick={() => isclick(qsn.options[1])}
                     />
+                    <ToastContainer />
                 </div>
                 <div className='btndiv'>
                     <Form.Check
@@ -55,6 +59,7 @@ const QSN = ({ qsn, idx }) => {
                         id={`inline-radio-3`}
                         onClick={() => isclick(qsn.options[2])}
                     />
+                    <ToastContainer />
                     <Form.Check
                         inline
                         label={qsn.options[3]}
@@ -63,6 +68,7 @@ const QSN = ({ qsn, idx }) => {
                         id={`inline-radio-4`}
                         onClick={() => isclick(qsn.options[3])}
                     />
+                    <ToastContainer />
                 </div>
             </Form>
 
