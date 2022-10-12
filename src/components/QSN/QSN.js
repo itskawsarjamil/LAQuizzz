@@ -3,7 +3,7 @@ import { Form } from 'react-bootstrap';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './QSN.css';
-import {  faEye } from '@fortawesome/free-solid-svg-icons';
+import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const QSN = ({ qsn, idx }) => {
     const ans = qsn.correctAnswer;
@@ -19,7 +19,7 @@ const QSN = ({ qsn, idx }) => {
         }
     }
     const crctans = () => {
-        console.log('Answer:',ans);
+        console.log('Answer:', ans);
         toast(ans);
 
     }
@@ -39,7 +39,6 @@ const QSN = ({ qsn, idx }) => {
                         onClick={() => isclick(qsn.options[0])}
 
                     />
-                    <ToastContainer />
                     <Form.Check
                         inline
                         label={qsn.options[1]}
@@ -48,8 +47,8 @@ const QSN = ({ qsn, idx }) => {
                         id={`inline-radio-2`}
                         onClick={() => isclick(qsn.options[1])}
                     />
-                    <ToastContainer />
                 </div>
+                {/* <ToastContainer /> */}
                 <div className='btndiv'>
                     <Form.Check
                         inline
@@ -59,7 +58,7 @@ const QSN = ({ qsn, idx }) => {
                         id={`inline-radio-3`}
                         onClick={() => isclick(qsn.options[2])}
                     />
-                    <ToastContainer />
+                    
                     <Form.Check
                         inline
                         label={qsn.options[3]}
@@ -68,8 +67,9 @@ const QSN = ({ qsn, idx }) => {
                         id={`inline-radio-4`}
                         onClick={() => isclick(qsn.options[3])}
                     />
-                    <ToastContainer />
+
                 </div>
+                <ToastContainer />
             </Form>
 
         </div>

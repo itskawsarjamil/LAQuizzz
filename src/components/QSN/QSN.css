@@ -8,6 +8,9 @@
     background-color: #f3eaea;
     font-size: large;
 }
+.card h4{
+    padding-right: 1.5em;
+}
 .btndiv button{
     border: none;
     background-color: aliceblue;

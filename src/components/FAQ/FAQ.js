@@ -5,9 +5,9 @@ function BasicExample() {
         <div className='faq'>
             <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
-                    <Accordion.Header className='acrdn-hdr'><h5>How Does React Work ?</h5></Accordion.Header>
+                    <Accordion.Header className='acrdn-hdr'><h5>What is the purpose of react router..?</h5></Accordion.Header>
                     <Accordion.Body>
-                        ReactJS divides the UI into isolated reusable pieces of code known as components. React components work similarly to JavaScript functions as they accept arbitrary inputs called properties or props. It's possible to have as many components as necessary without cluttering your code.
+                    ReactJS Router is mainly used for developing Single Page Web Applications. React Router is used to define multiple routes in the application. When a user types a specific URL into the browser, and if this URL path matches any 'route' inside the router file, the user will be redirected to that particular route.
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">

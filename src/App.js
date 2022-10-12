@@ -36,7 +36,7 @@ function App() {
       ]
     },
     {
-      path: '*', element: <div>404 404 404 yeeee!!!</div>,
+      path: '*', element: <div>404 404 404 yeeee got yuuu..!!!</div>,
     }
   ])
   return (
