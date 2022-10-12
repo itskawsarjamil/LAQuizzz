@@ -19,12 +19,7 @@ function BasicExample() {
                 <Accordion.Item eventKey="2">
                     <Accordion.Header className='acrdn-hdr'><h5>Something about useRef hook...</h5></Accordion.Header>
                     <Accordion.Body>
-                        The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are:<br>
-                        </br>
-                        1.Add an event listener for a button<br></br>
-                        2.Perform an action when state or props change<br></br>
-                        3.Clean up event listeners when the component unmounts.<br></br>
-                        4.timers
+                    The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>
