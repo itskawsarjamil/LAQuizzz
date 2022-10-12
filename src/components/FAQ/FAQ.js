@@ -11,13 +11,13 @@ function BasicExample() {
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
-                    <Accordion.Header className='acrdn-hdr'><h5>Difference between Props and States</h5></Accordion.Header>
+                    <Accordion.Header className='acrdn-hdr'><h5>How Does Context API Works..?</h5></Accordion.Header>
                     <Accordion.Body>
-                        State is the local state of the component which cannot be accessed and modified outside of the component. It's equivalent to local variables in a function. Props, on the other hand, make components reusable by giving components the ability to receive data from their parent component in the form of props.
+                    The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux.
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="2">
-                    <Accordion.Header className='acrdn-hdr'><h5>Without api fetch what other things useEffect hook can do ?</h5></Accordion.Header>
+                    <Accordion.Header className='acrdn-hdr'><h5>Something about useRef hook...</h5></Accordion.Header>
                     <Accordion.Body>
                         The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are:<br>
                         </br>
