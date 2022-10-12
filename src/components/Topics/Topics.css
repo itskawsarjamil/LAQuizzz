@@ -1,0 +1,12 @@
+.about{
+    margin: 8em;
+    background-image: url('../../../public/quiztime.jpg');
+    
+}
+
+.product{
+    display: flex;
+    /* margin: 2em; */
+    justify-content: space-around;
+    margin-bottom: 3em; 
+}

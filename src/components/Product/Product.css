@@ -1,48 +1,29 @@
-.product {
-    width: 300px;
-    height: 510px;
-    border: 1px solid #95A0A7;
-    border-radius: 8px;
-    position: relative;
-}
-
-.product img {
-    width: 286px;
-    height: 286px;
-    margin: 7px;
-    border-radius: 8px;
-}
 .product-info{
-    margin: 0 14px;
+    border: 2px solid green;
+    width: 20em;
+    border-radius: 20px;
+    box-shadow: 5px 10px #888888;
 }
-.product-info p{
-    margin-bottom: 0;
-    margin-top: 5px;
+.product-info img{
+    width: 50%;
+    /* margin: 0; */
 }
-.product-name {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 25px;
-    margin-top: 7px;
-}
-
-.btn-cart {
-    height: 48px;
-    width: 100%;
-    background: #FFE0B3;
-    border-radius: 0px 0px 8px 8px;
-    border: none;
-    position: absolute;
-    bottom: 0;
+.nameandtotal{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
-.btn-cart .btn-text{
-    margin-right: 4px;
+.nameandtotal p{
+    font-size: x-large;
+    font-weight: bold;
+    padding: 0.5em;
 }
-.btn-cart:hover{
-    background-color: orange;
+
+.product-info button{
+    width: 100%;
+    padding: 0.2em;
+    color: rgba(236, 17, 90, 0.959);
+    border-radius: 20px;
+    font-weight: bolder;
+    bottom: 0;
 }
