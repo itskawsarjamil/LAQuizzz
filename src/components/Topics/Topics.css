@@ -5,8 +5,21 @@
 }
 
 .product{
-    display: flex;
+    display: grid;
     /* margin: 2em; */
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
     justify-content: space-around;
     margin-bottom: 3em; 
+}
+@media screen and (max-width:992px){
+    .product{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2em;
+    }
+}
+@media screen and (max-width:768px){
+    .product{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
